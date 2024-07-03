@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradox-team</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ 
+  </head>
+  <body>
+    <ion-loading
+      trigger="open-loading"
+      message="Dismissing after 3 seconds..."
+      duration="3000"
+    ></ion-loading>
+
+    <ion-menu content-id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu Content</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">This is the menu left.</ion-content>
+    </ion-menu>
+    <ion-tabs id="main-content">
+      <ion-tab tab="home">
+        <ion-nav id="home-nav"></ion-nav>
+        <div id="home-page">
+          <ion-header>
+            <ion-toolbar>
+              <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+              <ion-title>Menu</ion-title>
+              <ion-avatar
+                style="width: 40px; height: 40px; margin-right: 10px"
+                slot="end"
+              >
+                <img
+                  alt="Silhouette of a person's head"
+                  src="https://ionicframework.com/docs/img/demos/avatar.svg"
+                />
+              </ion-avatar>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <div class="example-content" style="margin: 0 auto;">Listen now content</div>
+            <ion-img
+              src="https://docs-demo.ionic.io/assets/madison.jpg"
+              alt="The Wisconsin State Capitol building in Madison, WI at night"
+            ></ion-img>
+            <ion-button id="open-loading" class="d-none">Show Loading</ion-button>
+            <span id="hola" class="d-none">hola</span>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+
+          </ion-content>
+        </div>
+      </ion-tab>
+      <ion-tab tab="radio">
+        <ion-nav id="radio-nav"></ion-nav>
+        <div id="radio-page">
+          <ion-header>
+            <ion-toolbar>
+              <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+              <ion-title>Radio</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <div class="example-content">Radio content</div>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
+
+              <ion-card-content>
+                Here's a small text description for the card content. Nothing
+                more, nothing less.
+              </ion-card-content>
+            </ion-card>
+          </ion-content>
+        </div>
+      </ion-tab>
+      <ion-tab tab="library">
+        <ion-nav id="library-nav"></ion-nav>
+        <div id="library-page">
+          <ion-header>
+            <ion-toolbar>
+              <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+              <ion-title>Library</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <div class="example-content">Library content</div>
+            <ion-card>
+              <img
+                alt="Silhouette of mountains"
+                src="https://ionicframework.com/docs/img/demos/card-media.png"
+              />
+              <ion-card-header>
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
+
+              <ion-card-content>
+                Here's a small text description for the card content. Nothing
+                more, nothing less.
+              </ion-card-content>
+            </ion-card>
+          </ion-content>
+        </div>
+      </ion-tab>
+      <ion-tab tab="search">
+        <ion-nav id="search-nav"></ion-nav>
+        <div id="search-page">
+          <ion-header>
+            <ion-toolbar>
+              <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+              <ion-title>Search</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <div class="example-content">Search content</div>
+            <ion-card-content>
+              <ion-list>
+                <ion-item>
+                  <ion-input label="Default input"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input
+                    label="Input with placeholder"
+                    placeholder="Enter company name"
+                  ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input
+                    label="Input with value"
+                    value="121 S Pinckney St #300"
+                  ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input
+                    label="Readonly input"
+                    value="Madison"
+                    readonly="true"
+                  ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input
+                    label="Disabled input"
+                    value="53703"
+                    disabled="true"
+                  ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input
+                    type="password"
+                    label="Password"
+                    value="NeverGonnaGiveYouUp"
+                  >
+                    <ion-input-password-toggle
+                      slot="end"
+                    ></ion-input-password-toggle>
+                  </ion-input>
+                </ion-item>
+              </ion-list>
+            </ion-card-content>
+          </ion-content>
+        </div>
+      </ion-tab>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="play-circle"></ion-icon>
+          Listen Now
+        </ion-tab-button>
+        <ion-tab-button tab="radio">
+          <ion-icon name="radio"></ion-icon>
+          Radio
+        </ion-tab-button>
+        <ion-tab-button tab="library">
+          <ion-icon name="library"></ion-icon>
+          Library
+        </ion-tab-button>
+        <ion-tab-button tab="search">
+          <ion-icon name="search"></ion-icon>
+          Search
+        </ion-tab-button>
+      </ion-tab-bar>
+      
+
+    </ion-tabs>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      function showAlert() {
+        const alert = document.createElement("ion-alert");
+        alert.header = "Alert";
+        alert.message = "This is an alert!";
+        alert.buttons = ["OK"];
+
+        document.body.appendChild(alert);
+        return alert.present();
+      }
+
+      const homeNav = document.querySelector("#home-nav");
+      const homePage = document.querySelector("#home-page");
+      homeNav.root = homePage;
+
+      const radioNav = document.querySelector("#radio-nav");
+      const radioPage = document.querySelector("#radio-page");
+      radioNav.root = radioPage;
+
+      const libraryNav = document.querySelector("#library-nav");
+      const libraryPage = document.querySelector("#library-page");
+      libraryNav.root = libraryPage;
+
+      const searchNav = document.querySelector("#search-nav");
+      const searchPage = document.querySelector("#search-page");
+      searchNav.root = searchPage;
+
+      $('#hola').css({"background-color":"green", "padding":"10px"});
+
+      $('#open-loading').on("click", function(){
+        alert("Hola");
+      })
+
+    </script>
+  </body>
+</html>
