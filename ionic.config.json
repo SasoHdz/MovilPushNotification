@@ -1,5 +1,7 @@
 {
   "name": "AppNotifications",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "custom"
 }

@@ -22,5 +22,11 @@
   "license": "MIT",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@capacitor-community/http": "^1.4.1",
+    "@capacitor/android": "6.1.0",
+    "@capacitor/cli": "^6.1.0",
+    "@capacitor/core": "^6.1.0"
   }
 }
