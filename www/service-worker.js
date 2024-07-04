@@ -13,27 +13,28 @@
 //   });
 
 //Configuracion para app movil
-self.addEventListener('install', function(event) {
-    console.log('Service Worker installing.');
-    event.waitUntil(
-        caches.open('my-cache').then(function(cache) {
-            return cache.addAll([
-                '/',
-                '/index.html',
-                '/styles.css',
-                '/script.js'
-            ]);
-        })
-    );
-});
+// self.addEventListener('install', function(event) {
+//     console.log('Service Worker installing.');
+//     event.waitUntil(
+//         caches.open('my-cache').then(function(cache) {
+//             return cache.addAll([
+//                 '/',
+//                 '/index.html',
+//                 '/styles.css',
+//                 '/script.js'
+//             ]);
+//         })
+//     );
+// });
 
-self.addEventListener('fetch', function(event) {
-    event.respondWith(
-        caches.match(event.request).then(function(response) {
-            return response || fetch(event.request);
-        })
-    );
-});
+
+// self.addEventListener('fetch', function(event) {
+//     event.respondWith(
+//         caches.match(event.request).then(function(response) {
+//             return response || fetch(event.request);
+//         })
+//     );
+// });
 
 
 

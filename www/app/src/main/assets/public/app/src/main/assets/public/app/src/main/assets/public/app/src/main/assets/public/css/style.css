@@ -1,0 +1,12 @@
+/* Estilo para las clases de validación de Bootstrap */
+.invalid-feedback {
+    display: block;
+    color: red;
+    margin-top: 5px;
+  }
+  
+  /* Estilo para los elementos del formulario */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  

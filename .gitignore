@@ -4,3 +4,8 @@
 # dependencies
 node_modules/
 
+/android
+/android/*
+# dependencies
+android/
+

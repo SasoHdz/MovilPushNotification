@@ -1,9 +1,6 @@
 {
   "appId": "com.example.app",
   "appName": "apppushnotifications",
-  "webDir": "www",
-  "bundledWebRuntime": false,
-  "server": {
-    "url": "http://localhost:8080"
-  }
+  "webDir": "www"
+ 
 }
